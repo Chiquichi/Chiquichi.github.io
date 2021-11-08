@@ -4,135 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiqui's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
 </head>
 <body>
-    <div class="Chiqui">
-       <nav>
-        <h2 class="logo">My Portfolio</h2>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#about">About</a></li> 
-            <li><a href="#Contact">Contact</a></li> 
-            <li><a href="#Skills">Skills</a></li> 
-            <li><a href="#Projects">Projects</a></li>
-            
-        </ul>
-       </nav>
-
-       <div class="photo">
-        <img src="chiqui.jpg" height="300" width="250"> 
-        <div class="socmed">
-            <a href="https://www.facebook.com/chqzbl/"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/Chqzbl"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/chqzbl/"><i class="fa fa-instagram"></i></a>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Chiqui's <span>Portfolio</span></a>
+                <div class="navbar-nav">
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contacts">Contact</a>
+                </div>
+            </div>
         </div>
-      </div>
-        
-
-       <div class="content">
-           <h2>Hello, I am</h2>
-           <h1>Maria Au Chiqui Chi Zabala</h1>
-           <h3>I am a Programmer</h3>
-           <div class="mantra">
-               <h4>"Small steps in the <b>right direction</b></h4>
-               <h4>can turn out to be the <b>biggest step</b> of your life."</h4>
-           </div>
-       </div>
-       
-   </div>
-
-    <section class="about" id="about">
-    <div class="main">
-        <img src="about.jpg">
-        <div class="about-text">
-         <h2>About Me</h2>
-         <h3>H E L L O !</h3>
-         <p>My name is <b>Maria Au Chiqui Chi R. Zabala</b> I am 20-year old
-         and a 3rd year college with the course of Computer Science
-         at Technological University of the Philippines. 
-        
-        I am a hardworking, determined, and optimistic person. I enjoy talking 
-        with other people and sharing my experiences to them in order to learn new one.
-
-        I also love to watch movies, listen to music, and reading novels. </p>
+        <div class="Home" id="Home">
+            <div class="contain">
+                <div class="photo">
+                    <img class="photo" src="images/chiqui.jpg">
+                </div>
+                <h2>Hello! I am</h2>
+                <h1>Maria Au Chiqui Chi R. Zabala</h1>
+                <h2>I am a 3rd year Computer Science Student</h2>
+                <h4>"Small steps in the <b>right direction</b></h4>
+                <h4>can turn out to be the <b>biggest step</b> of your life."</h4>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <section class="about" id="About">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="images/about.jpg">
+            <div class="about-text">
+                <p>My name is <b>Maria Au Chiqui Chi R. Zabala,</b> 20 years of age
+                and a 3rd year college studying Bachelor of Science in Computer Science
+                at Technological University of the Philippines.
+            <br>
+            <br>
+                I am a hardworking, determined, and optimistic person. I enjoy talking
+                with other people and sharing my experiences to them in order to learn new one.
+            <br>
+            <br>
+                I also love to watch movies, listen to music, and read novels. </p>
+            </div>
+        </div>
     </section>
 
-   <section class="Skills" id="Skills">
-       <div class="MySkills">
-           <h1>My Skills</h1>
-
-           <li><h3>HTML</h3>
-               <span class="bar"><span class="HTML"></span></span>
-        </li>
-
-           <li><h3>C/C++</h3>
-            <span class="bar"><span class="C"></span></span>
-        </li>
-
-        <li><h3>CSS</h3>
-            <span class="bar"><span class="CSS"></span></span>
-        </li>
-
-        <li><h3>Python</h3>
-            <span class="bar"><span class="Python"></span></span>
-        </li>
-
-        <li><h3>BasicJava</h3>
-            <span class="bar"><span class="BasicJava"></span></span>
-        </li>
-
-       </div>
-   </section>
-
-   <section class="Projects" id="Projects">
-    <div class="projects">
-     <h1 class="title">PROJECTS</h1>
-        <div class="Todo">
-            <img class="a" src="mylist.png">
-            <h4><b><i>My To Do List App</i></b></h4>
+    <section class="Skills" id="Skills">
+        <center>
+            <div class="container">
+            <h1>My Skills</h1>
+            <div class="row">
+                <img src="images/skills.PNG" style="height: 400px;">
+            </div>
         </div>
-        <div class="Form">
-            <img class="b" src="form.png">
-            <h4><b><i>Phone Order Form</i></b></h4>
+    </center>
+    </section>
+
+    <Section class="Projects" id="Projects">
+        <div class="container">
+            <div class="heading">
+                <span>
+                    <h2>My Projects</h2>
+                    <br>
+                </span>
+            </div>
+            <div class="box">
+                    <div class="row">
+                    <center>
+                        <img src="images/list.jpg">
+                        <img src="images/form.jpg">
+                    </center>
+                    </div>
+                    <div class="row">
+                    <center>
+                        <img src="images/inventory.jpg">
+                        <img src="images/cpu.jpg">
+                    </center>
+                    </div>
+            </div>
         </div>
-    </div>
-   </section>
+    </Section>
 
-   <section class="Contact" id="Contact">
-       <div class="contacts">
-           <h2>My Contact Details:</h2>
-           <br>
-
-           <div class="socials">
-        <ul>
-            <li><a href="https://www.facebook.com/chqzbl/"><i class="fa fa-facebook"> Facebook: Maria Chiqui Zabala</i></a></li>
-            <br>
-            <li><a href="https://twitter.com/Chqzbl"><i class="fa fa-twitter"> Twitter: @chqzbl</i></a></li>
-            <br>
-            <li><a href="https://www.instagram.com/chqzbl/"><i class="fa fa-instagram"> Instagram: @chqzbl</i></a></li>
-            <br>
-            <li><a href="contact.html"><i class="fa fa-phone"> Mobile: 09061463712</i></li>
-            <br>
-            <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope"> Email: chiquichi18@gmail.com</i></li>
-            <br>
-        </ul>
+    <Section class="Contacts" id="Contacts">
+        <div class="container">
+            <div class="contactinfo">
+                <div><i class="fas fa-map-marker-alt"></i>1015 C. P. Sevilla, Caloocan City, Philippines 1400</div>
+                <div><i class="fas fa-envelope"></i>chiquichi18@gmail.com</div>
+                <div><i class="fas fa-phone"></i>+63-9061-463-712</div>
+                <div><i class="fas fa-clock"></i>Mon-Fri 8:00 AM to 5:00 PM</div>
+            </div>
+            <div class="contactform">
+             <h2>Contact Us</h2>
+                <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="Name" required>
+                    <input type="text" name="email" class="text-box" placeholder="Email" required>
+                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                    <input type="submit" name="submit" class="sendbtn" value="Send">
+                </form>
+            </div>
         </div>
-       </div>
-   </section>
-
-   <section>
-   <div class="footer">
-       <h3>Copyright ©2021 Chiqui. All rights served.</h3>
-   </div>
-</section>
+    </Section>
     
-
-
-
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/chqzbl/">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/chqzbl/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/Chqzbl">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCviWSBtIVk73ea6JZboS6Gg">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <h5>Zabala's Portfolio Copyright ©2021 | All Rights Reserved</h5>
+    </footer>
 </body>
 </html>
