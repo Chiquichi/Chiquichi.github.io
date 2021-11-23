@@ -8,65 +8,22 @@ body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
     color: #333;
+    margin: 0;
 }
-.container{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 1.2rem;
-}
+
 header{
     min-height: 100vh;
     background: url("images/bg.jpg") no-repeat center/cover fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-
 }
-@media screen and (min-width: 768px){
 .navbar{
-    background: rgba(51, 51, 51, 0.61);
-    padding: 0.5rem;
-    display: inline;
     text-align: center;
-    width: 100%;
-    position: fixed;
-}
-}
-@media screen and (min-width: 768px){
-    .navbar .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-.navbar-brand{
-    color: #fff;
-    font-size: 24px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 3px;
-}
-.navbar-nav{
-    text-align: center;
-    padding: 0.8rem 0 0.2rem 0;
-}
-.navbar-nav a{
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-.navbar-nav a{
+    padding: 2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    color: #fff;
-    font-weight: 500;
-    padding: 0.04rem 0.01rem;
-    text-decoration: none;
-    letter-spacing: 3px;
-    transition: 0.3s ease;
-    margin: 10px;
-}
-.navbar-nav a:hover{
-    color: lightcoral;
+    letter-spacing: 1px;
 }
 .Home{
     flex: 1;
@@ -115,23 +72,11 @@ header{
 .about .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     max-width: 60px 20px 0 20px;
     background: #191919cb;
     border-radius: 10px;
     padding: 2rem;
-}
-@media screen and (min-width: 200px) {
-    .about img{
-        width: 200px;
-        height: 290px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-bottom: 1.8rem;
-    }
 }
 .about-text {
     color:#fff;
@@ -144,10 +89,7 @@ header{
         font-family: 'Galada';
         text-align: center;
     }
-.container{
-    max-width: 960px;
-    padding: 0 0 0 0;
-}
+
 .about .container p{
     text-align: justify;
 }
@@ -175,18 +117,12 @@ header{
 .Skills .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     margin: 60px 20px 0 20px;
     background: #191919cb;
     border-radius: 10px;
     padding: 2rem;
-}
-.Skills .container .row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 .Skills .container .row img{
     width: 100%;
@@ -201,10 +137,6 @@ header{
 .Projects .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 60px 20px 0 20px;
     background: #191919cb;
     border-radius: 10px;
     padding: 2rem;
@@ -216,125 +148,37 @@ header{
     font-family: 'Galada';
     padding: 0 0 0 1rem;
 }
-.Projects .container .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.Projects .row .col img{
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
 }
-.Projects .container .box .row{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.Projects .container .box .row img{
-    flex-direction: row;
-    padding: 2rem;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 0.5cm;
-    margin-top: 0.5cm;
-}
-.Contacts{
-    min-height: 100vh;
-    background: url("images/phone.jpg") fixed center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Contacts .container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contacts .container{
     background: #191919cb;
-    padding: 30px;
     border-radius: 10px;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 2rem;
 }
-.contactinfo{
-    color: #fff;
-    max-width: 500px;
-    line-height: 65px;
-    padding-left: 50px;
-    font-size: 18px;
-}
-.contactinfo i{
-    margin-right: 20px;
-    font-size: 25px;
-}
-.contactform{
-    max-width: 700px;
-    margin-right: 50px;
-}
-.contactinfo, .contactform{
-    flex: 1;
-}
-.contactform h2{
-    color: #fff;
+.contacts .cont{
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 35px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+    margin: 0;
+    background: url("images/phone.jpg");
 }
-.contactform .text-box{
-    background: #000;
+.contacts h1{
+    font-family: 'Galada';
     color: #fff;
-    border: none;
-    width: 50%;
-    height: 50px;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    opacity: 0.9;
+    font-size: 5rem;
+    line-height: 2em;
 }
-.contactform .text-box:first-child{
-    margin-right: 15px;
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
-.contactform textarea{
-    background: #000;
-    color: #fff;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 15px;
-    min-height: 200px;
-    max-height: 400px;
-    resize: vertical;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
-.contactform .sendbtn {
-    float: right;
-    background: #333;
-    color: lightcoral;
-    border: none;
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.contactform .sendbtn:hover{
-    background: lightcoral;
-    color: #333;
-}
-@media screen and (max-width: 850px){
-    .Contacts .container{
-        flex-direction: column;
-        display: flex;
-    }
-    .contactform .contactinfo{
-        margin: 30px 50px;
-    }
-    .contactform h2{
-        font-size: 30px;
-    }
-    .contactform .text-box{
+@media only screen and (max-width: 768px){
+    .container .col-8{
+        flex: 0 0 auto;
         width: 100%;
     }
 }
@@ -347,7 +191,7 @@ footer{
 .socials{
     justify-content: center;
     display: flex;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1rem;
 }
 .socials a{
     color: #fff;
